@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="Cesium-1.122/Build/Cesium/Cesium.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+        
+        <link href="Cesium-1.122/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    </head>
+    <body style="margin: 0px; padding: 0px;">
+        <div id="baseLayerPickerContainer" style="display: none;"></div>
+        <div id="cesiumContainer" style="margin: 0px; padding: 0px;"></div>
+        <div>
+            
+            <form id="connect_buttons">
+                <div>
+                    <label for="connect">WebSocket connection:</label>
+                    <button id="connect" type="submit">Connect</button>
+                    <button id="disconnect" type="submit" disabled="disabled">Disconnect
+                    </button>
+                    <button id="genperson" type="submit">
+                        Generate Person
+                    </button>
+                </div>
+                <div>
+                    <pre id="person"></pre>
+                </div>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
