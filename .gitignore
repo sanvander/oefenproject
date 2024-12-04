@@ -1,0 +1,77 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# Ignore everything
+*
+
+# Unignore directories (to all depths) and unignore code and style files in these directories
+!.concierge/**/
+!.github/**/
+!.vscode/**/
+!Apps/**/
+!Documentation/**/
+!packages/**/
+!Specs/**/
+!Tools/**/
+
+!**/*.js
+!**/*.cjs
+!**/*.css
+!**/*.html
+!**/*.md
+!**/*.ts
+
+# Re-ignore a few things caught above
+
+**/*.min.js
+
+packages/engine/Build/**
+packages/engine/index.js
+packages/engine/Source/Scene/GltfPipeline/**
+packages/engine/Source/Shaders/**/*.js
+packages/engine/Source/ThirdParty/**
+
+packages/widgets/Build/**
+packages/widgets/index.js
+packages/widgets/Source/ThirdParty/**
+
+Specs/jasmine/**
+
+Apps/Sandcastle/ThirdParty
+Tools/jsdoc/cesium_template/static/javascript/prism.js
+Tools/jsdoc/cesium_template/static/styles/prism.css
+**/LICENSE.md
+
+
