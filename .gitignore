@@ -1,78 +1,102 @@
-HELP.md
+# Maven/Gradle build directories (Java)
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Maven wrapper files
+.mvn/wrapper/maven-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA specific files
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# VS Code specific files
+.vscode/
+
+# NetBeans specific files
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Eclipse specific files
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
 
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
 
-# Ignore everything
-*
+# Compiled class files
+*.class
 
-# Unignore directories (to all depths) and unignore code and style files in these directories
-!.concierge/**/
-!.github/**/
-!.vscode/**/
-!Apps/**/
-!Documentation/**/
-!packages/**/
-!Specs/**/
-!Tools/**/
+# System files
+.DS_Store
+Thumbs.db
 
-!**/*.js
-!**/*.cjs
-!**/*.css
-!**/*.html
-!**/*.md
-!**/*.ts
-!**/*.java
+# Node.js specific files for CesiumJS/frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Re-ignore a few things caught above
+# Dependencies and package management
+package-lock.json
+yarn.lock
 
+# Output files
+dist/
+out/
+
+# Ignore minified JavaScript files (usually generated)
 **/*.min.js
 
+# Ignore CesiumJS build files if you're using the pre-built Cesium library
+Apps/Sandcastle/ThirdParty
+Tools/jsdoc/cesium_template/static/javascript/prism.js
+Tools/jsdoc/cesium_template/static/styles/prism.css
+
+# General untracked/ignored files
+*.env
+*.bak
+*.tmp
+*.swp
+
+# Git specifics
+.git/
+
+# Ignore Java and frontend compiled files
+!**/*.java
+!**/*.js
+!**/*.html
+!**/*.css
+!**/*.md
+!**/*.ts
+
+# Re-ignore some unnecessary files for CesiumJS
 packages/engine/Build/**
 packages/engine/index.js
 packages/engine/Source/Scene/GltfPipeline/**
 packages/engine/Source/Shaders/**/*.js
 packages/engine/Source/ThirdParty/**
-
 packages/widgets/Build/**
 packages/widgets/index.js
 packages/widgets/Source/ThirdParty/**
 
-Specs/jasmine/**
+# Documentation and specs
+!Documentation/**/
+!Specs/**/
 
-Apps/Sandcastle/ThirdParty
-Tools/jsdoc/cesium_template/static/javascript/prism.js
-Tools/jsdoc/cesium_template/static/styles/prism.css
-**/LICENSE.md
+# Build output from CesiumJS if applicable
+packages/engine/Build/**
+packages/widgets/Build/**
 
-
+# Ignore IntelliJ output folders
+out/
