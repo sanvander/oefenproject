@@ -52,6 +52,7 @@ build/
 !**/*.html
 !**/*.md
 !**/*.ts
+!**/*.java
 
 # Re-ignore a few things caught above
 
