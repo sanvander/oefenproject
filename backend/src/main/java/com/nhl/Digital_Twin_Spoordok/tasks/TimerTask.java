@@ -1,11 +1,10 @@
-package com.nhl.spring_boot_example.tasks;
+package com.nhl.Digital_Twin_Spoordok.tasks;
 
-import com.nhl.spring_boot_example.model.Person;
+import com.nhl.Digital_Twin_Spoordok.model.populationLayer.Person;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 

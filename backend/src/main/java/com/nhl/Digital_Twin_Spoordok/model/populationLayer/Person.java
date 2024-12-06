@@ -1,4 +1,4 @@
-package com.nhl.spring_boot_example.model;
+package com.nhl.Digital_Twin_Spoordok.model.populationLayer;
 
 public class Person {
     private String name;

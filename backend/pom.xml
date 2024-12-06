@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nhl</groupId>
-    <artifactId>spring_boot_example</artifactId>
+    <artifactId>Digital_Twin_Spoordok</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_example</name>
-    <description>spring_boot_example</description>
+    <name>Digital_Twin_Spoordok</name>
+    <description>Digital_Twin_Spoordok</description>
     <url/>
     <licenses>
         <license/>

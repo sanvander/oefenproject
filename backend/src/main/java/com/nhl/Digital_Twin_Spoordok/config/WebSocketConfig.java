@@ -1,4 +1,4 @@
-package com.nhl.spring_boot_example.config;
+package com.nhl.Digital_Twin_Spoordok.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
